@@ -18,6 +18,51 @@ body {
     z-index: 3;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.task-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.task-title {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.action-buttons .btn {
+  margin-left: 5px;
+}
+
+.task-description {
+  font-size: 0.9rem;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+
 
 
 
