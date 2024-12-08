@@ -111,6 +111,20 @@ const state = {
    
     updateLocalStorage();
   };
+
+const debounce = (func, delay) => {
+  let timeout;
+  return (...args) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func(...args), delay);
+  };
+};
+
+document.getElementById("searchBar").addEventListener(
+  "input",
+  debounce((e) => searchTask(e), 300)
+);
+
   
   
   const openTask = (e) => {
